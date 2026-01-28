@@ -1,0 +1,34 @@
+{
+  "description": "10kV配电线路供电可靠性计算参数",
+  "constants": {
+    "Cable_Fault_Rate": 0.09282879,
+    "Overhead_Fault_Rate": 0.15337829,
+    "Auto_Isolation_Time": 0.557,
+    "Manual_Isolation_Time": 2.0,
+    "Cable_Repair_Time": 3.073,
+    "Scheduled_Outage_Rate": 0.0221,
+    "Scheduled_Total_Time": 5.475,
+    "Annual_Power_Hours": 8760
+  },
+  "input": {
+    "main_sheet": "主线",
+    "branch_sheet": "分支"
+  },
+  "field_mappings": {
+    "main": {
+      "线路分段": "分段编号",
+      "起点是否自动化": "自动化状态",
+      "长度(km)": "长度(km)",
+      "用户数量(台)": "用户数(台)",
+      "线路型号": "敷设方式_原始"
+    },
+    "branch": {
+      "分支分段": "分段编号",
+      "是否自动化": "自动化状态",
+      "长度(km)": "长度(km)",
+      "用户数量(台)": "用户数(台)",
+      "线路型号": "敷设方式_原始"
+    }
+  },
+  "verbose": true
+}
